@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.6.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\2_Infrastructure\KC.Template.BackgroundService.Infrastructure\KC.Template.BackgroundService.Infrastructure.csproj" />
+    <ProjectReference Include="..\2_Infrastructure\KC.Template.BackgroundService.Repository\KC.Template.BackgroundService.Repository.csproj" />
+    <ProjectReference Include="..\3_Domain\KC.Template.BackgroundService.Domain\KC.Template.BackgroundService.Domain.csproj" />
+    <ProjectReference Include="..\4_Service\KC.Template.BackgroundService.IService\KC.Template.BackgroundService.IService.csproj" />
+    <ProjectReference Include="..\4_Service\KC.Template.BackgroundService.Service\KC.Template.BackgroundService.Service.csproj" />
+  </ItemGroup>
+
+</Project>
